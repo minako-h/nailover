@@ -1,0 +1,47 @@
+.menu1 {
+  background-color: rgb(231, 199, 215);
+  height: 100vh;
+  width: calc(100% - 300px);
+  position: relative;
+}
+
+.menu2 {
+  font-size: 60px;
+  margin-top: 60px;
+  color: white;
+  font-weight: bold;
+  margin-left: 430px;
+}
+
+
+
+.menu-choice1 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 70px;
+}
+
+.menu-choice2 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.select {
+  background-color: white;
+  border: black;
+  height: 200px;
+  width: 200px;
+  text-align: center;
+  
+}
+
+h1 {
+font-size: 15px;
+}
+
+.image1 {
+  height: 120px;
+  width: 150px;
+  margin-top: 20px;
+}
