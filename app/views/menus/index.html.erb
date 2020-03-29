@@ -1,38 +1,59 @@
 <div class="menu1">
 
   <div class="menu2">
-    pick up
+    <div class="moji">
+      pick up
+    </div>
+    <div class="moji1">
+      &#x1f48b;
+    </div>
   </div>
 
   <div class="menu-choice1">
-    <div class="select">
-      <%= image_tag 'base1.jpeg', class:"image1" %>
-      <h1>BASE</h1>
-    </div>
+    <%= link_to  movies_path, class: "select"  do %>
+      <div class="select">
+        <%= image_tag 'base1.jpeg', class:"image1" %>
+        <h1>BASE</h1>
+      </div>
+    <% end %>
     
-    <div class="select">
-      <%= image_tag 'color2.jpeg', class:"image1" %>
-      <h1>COLOR</h1>
-    </div>
-    <div class="select">
-      <%= image_tag 'top2.jpeg', class:"image1" %>
-      <h1>TOP</h1>
-    </div>  
+    <%= link_to  movies_path, class: "select"  do %>
+      <div class="select">
+        <%= image_tag 'color2.jpg', class:"image1" %>
+        <h1>COLOR</h1>
+      </div>
+    <% end %>
+
+    <%= link_to  movies_path, class: "select"  do %>
+      <div class="select">
+        <%= image_tag 'top2.jpeg', class:"image1" %>
+        <h1>TOP</h1>
+      </div>
+    <% end %>
   </div>
 
   <div class="menu-choice2">
-    <div class="select">
-      <%= image_tag 'art1.jpeg', class:"image1" %>
-      <h1>ART</h1>
-    </div>
-    <div class="select">
-      <%= image_tag 'pict2.jpeg', class:"image1" %>
-      <h1>PICT</h1>
-    </div>
-    <div class="select">
-      <%= image_tag 'etc.jpeg', class:"image1" %>
-      <h1>POLISH</h1>
-    </div>
+    <%= link_to  movies_path, class: "select"  do %>
+      <div class="select">
+        <%= image_tag 'art1.jpg', class:"image1" %>
+        <h1>ART</h1>
+      </div>
+    <% end %>
+
+    <%= link_to  movies_path, class: "select"  do %>
+      <div class="select">
+        <%= image_tag 'pict2.jpg', class:"image1" %>
+        <h1>PICT</h1>
+      </div>
+    <% end %>
+
+    <%= link_to  movies_path, class: "select"  do %>
+      <div class="select">
+        <%= image_tag 'etc.jpg', class:"image1" %>
+        <h1>POLISH</h1>
+      </div>
+    <% end %>
+    
 
   </div>  
 </div>

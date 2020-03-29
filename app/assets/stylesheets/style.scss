@@ -18,8 +18,32 @@ h2 {
 
 }
 
-.email_field {
-
+.field {
+  padding-bottom: 10px;
 }
 
+#user_nickname {
+  height: 25px;
+  width: 300px;
+}
+
+#user_email {
+  height: 25px;
+  width: 300px;
+}
+
+#user_password {
+  height: 25px;
+  width: 300px;
+}
+
+#user_password_confirmation {
+  height: 25px;
+  width: 300px;
+}
+
+.actions-btn {
+  height: 25px;
+  width: 100px;
+}
 
