@@ -3,7 +3,12 @@
   height: 100vh;
   width: calc(100% - 300px);
   font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic'; 
-  
+
+}
+
+.form {
+  width: 50%;
+  margin: 0 auto;
 }
 
 .message {
@@ -17,28 +22,30 @@
 h3 {
   font-size: 20px;
   margin-top: 50px;
-  margin-left: 300px;
+
 
 }
 
 
-.input-name {
+#name {
   background-color: white;
-  height: 50px;
-  width: 500px;
+  height: 30px;
+  width: 530px;
   margin: 0 auto;
 }
 
 h4 {
   font-size: 20px;
-  margin-left: 300px;
+
 }
 
-.input-message {
+#text {
   background-color: white;
-  height: 200px;
-  width: 500px;
+  height: 150px;
+  width: 530px;
   margin: 0 auto;
+  resize: none;
+  
 
 }
 

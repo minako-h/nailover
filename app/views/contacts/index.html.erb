@@ -1,17 +1,20 @@
 <div class="contacts">
-  <div class="message">
-    REQUEST
-  </div>
-  <h3>NAME</h3>
-  <div class="input-name"></div>
-  <h4>MESSAGE</h4>
-  <div class="input-message"></div>
-
-  <%= link_to root_path, class: "input-btn" do %>
-    <div class="input-btn">
-        GO
+  <div class="form">
+    <div class="message">
+      REQUEST
     </div>
-  <% end %>
-
+    <%= form_with(model: @contact, local: true) do |form| %>
+      <h3>NAME</h3>
+        <%= form.text_field :name, placeholder: "name", class: "input-name" %>
+      <h4>MESSAGE</h4>
+        <%= form.text_area :text, placeholder: "text", class: "input-message" %>
+    <% end %>
+  
+    <%= link_to root_path, class: "input-btn" do %>
+      <div class="input-btn">
+        GO
+      </div>
+    <% end %>
+  </div>
 </div>
 
