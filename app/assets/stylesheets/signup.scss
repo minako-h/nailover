@@ -3,10 +3,9 @@
   height: 100vh;
   width: calc(100% - 300px);
 }
-
-
+  
 h2 {
-  font-size: 30px;
+    font-size: 30px;
   color: rgb(92, 47, 47);
   margin-top: 100px;
   margin-left: 200px;
@@ -15,7 +14,7 @@ h2 {
 .new_user {
   color: rgb(92, 47, 47);
   margin-left: 200px;
-
+  
 }
 
 .field {
@@ -42,8 +41,14 @@ h2 {
   width: 300px;
 }
 
-.actions-btn {
-  height: 25px;
+.actions {
+  height: 100px;
   width: 100px;
+  font-size: 30px;
+  
+  input {
+    height: 100px;
+    width: 100px;
+  }
 }
 

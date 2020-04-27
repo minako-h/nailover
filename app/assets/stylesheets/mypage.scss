@@ -1,0 +1,42 @@
+.main {
+  background-color: rgb(199, 182, 190);
+  height: 100vh;
+  width: calc(100% - 300px);
+  color: rgb(92, 47, 47);
+}
+
+.my-contents {
+  margin-top: 80px;
+  animation-name: fadein;
+  animation-duration: 2s;
+}
+
+.name {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.profile {
+  height: 30px;
+}
+
+.movie-select {
+  font-size: 30px;
+  margin-top: 30px;
+  margin-left: 20%;
+}
+
+.movie-list {
+  height: 50px;
+}
+
+.photo {
+  font-size: 30px;
+  margin-top: 30px;
+  margin-left: 20%;
+}
+
+.photo-list {
+  height: 50px;
+}

@@ -33,7 +33,11 @@
       <div class="top">
         <ul class="menu">
           <li class="menu-list">
-            <%= link_to "MY PAGE", '#', class: "menu-list__btn"  %>
+            <% if user_signed_in? %>
+              <%= link_to "MY PAGE", user_path(current_user.id), class: "menu-list__btn"  %>
+            <% else %>
+              <%= link_to "MY PAGE", new_user_registration_path %>
+            <% end%>
           </li>
           <li class="menu-list">
             <%= link_to "MENU", menus_path, class: "menu-list__btn"  %>

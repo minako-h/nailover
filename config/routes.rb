@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :menus, only: [:index]
   resources :movies, only: [:index]
   resources :contacts, only: [:index]
+  resources :users, only: [:show]
   
 
 end
