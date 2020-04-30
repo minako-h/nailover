@@ -1,0 +1,14 @@
+<div class="contacts">
+  <div class="form">
+    <div class="message">
+      REQUEST
+    </div>
+    <%= form_with(model: @contact, local: true) do |form| %>
+      <h3>NAME</h3>
+        <%= form.text_field :name, placeholder: "Nickname", class: "input-name" %>
+      <h4>MESSAGE</h4>
+        <%= form.text_area :content, placeholder: "Text 例&#13;&#10;こんなアートの動画を追加してほしい‼︎".html_safe , class: "input-message"%>
+        <%= form.submit 'GO', class: "input-btn" %>
+    <% end %>
+  </div>
+</div>

@@ -3,11 +3,12 @@
   height: 100vh;
   width: calc(100% - 300px);
   font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic'; 
-
+  color: #383636;
 }
 
 .form {
-  width: 50%;
+  width: 45%;
+  height: 70%;
   margin: 0 auto;
 }
 
@@ -16,22 +17,20 @@
   margin-top: 100px;
   text-align: center;
   font-weight: bold;
-
 }
 
 h3 {
   font-size: 20px;
   margin-top: 50px;
-
-
 }
 
-
-#name {
+.input-name {
   background-color: white;
   height: 30px;
-  width: 530px;
+  width: 100%;
   margin: 0 auto;
+  padding-left: 10px;
+  font-size: 12px;
 }
 
 h4 {
@@ -39,24 +38,27 @@ h4 {
 
 }
 
-#text {
+.input-message {
   background-color: white;
   height: 150px;
-  width: 530px;
+  width: 100%;
   margin: 0 auto;
   resize: none;
-  
+  padding-top: 10px;
+  padding-left: 10px;
+  font-size: 12px;
 
 }
 
 .input-btn {
-  margin-left: 370px;
+  font-size: 15px;
   height: 45px;
-  width: 350px;
+  width: 70%;
   background-color: rgb(212, 117, 133);
   color: white;
-  text-align: center;
   line-height: 45px;
   margin: 20px auto;
-  text-decoration: none;
+  margin-left: 17%;
+  cursor: pointer;
 }
+
