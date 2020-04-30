@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root to: 'tops#index'
   resources :menus, only: [:index]
   resources :movies, only: [:index]
-  resources :contacts, only: [:index]
+  resources :contacts, only: [:new, :create]
   resources :users, only: [:show]
   
 
