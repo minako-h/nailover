@@ -1,13 +1,11 @@
 <div class="new">
   <div class="postnew">
+    <div class="postcreate">投稿する</div>
     <%= form_with(model: @post, local: true) do |form| %>
-      <h5>
-        投稿する
-      </h5>
-      <%= form.text_field :name, placeholder: "Nickname" %>
-      <%= form.text_field :image, placeholder: "Image Url" %>
-      <%= form.text_area :text, placeholder: "text"%>
-      <%= form.submit "SEND" %>
+      <%= form.text_field :name, placeholder: "Nickname", class: "input-n"%>
+      <%= form.text_field :image, placeholder: "Image Url", class: "input-i" %>
+      <%= form.text_area :text, placeholder: "Text 例&#13;&#10;ドット柄にしてみました！".html_safe, class:"input-t" %>
+      <%= form.submit "SEND", class: "input-b" %>
     <% end %>
   </div>
 </div>
