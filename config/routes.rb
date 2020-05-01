@@ -7,6 +7,6 @@ Rails.application.routes.draw do
   end
   resources :contacts, only: [:new, :create]
   resources :users, only: [:show]
-  
+  resources :posts, only: [:index, :new, :create]
 
 end
