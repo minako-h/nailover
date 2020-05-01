@@ -1,0 +1,13 @@
+<div class="new">
+  <div class="postnew">
+    <%= form_with(model: @post, local: true) do |form| %>
+      <h5>
+        投稿する
+      </h5>
+      <%= form.text_field :name, placeholder: "Nickname" %>
+      <%= form.text_field :image, placeholder: "Image Url" %>
+      <%= form.text_area :text, placeholder: "text"%>
+      <%= form.submit "SEND" %>
+    <% end %>
+  </div>
+</div>
