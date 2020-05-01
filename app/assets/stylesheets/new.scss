@@ -1,0 +1,63 @@
+.new {
+  background-color: rgb(199, 182, 190);
+  height: 100vh;
+  width: calc(100% - 300px);
+  font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic'; 
+  color: #383636;
+}
+
+.postnew {
+  width: 45%;
+  height: 70%;
+  margin: 0 auto;
+}
+
+.postcreate {
+  font-family: 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+  font-size: 20px;
+  color: rgb(235, 230, 230);
+  text-align: center;
+  margin-top: 100px;
+}
+
+.input-n {
+  background-color: white;
+  height: 30px;
+  width: 100%;
+  padding-left: 10px;
+  font-size: 12px;
+  margin-top: 30px;
+}
+
+.input-i{
+  background-color: white;
+  height: 30px;
+  width: 100%;
+  padding-left: 10px;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.input-t {
+  background-color: white;
+  height: 150px;
+  width: 100%;
+  margin: 0 auto;
+  resize: none;
+  padding-top: 10px;
+  padding-left: 10px;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.input-b {
+  font-size: 15px;
+  height: 45px;
+  width: 70%;
+  background-color: rgb(212, 117, 133);
+  color: white;
+  line-height: 45px;
+  margin: 20px auto;
+  margin-left: 17%;
+  cursor: pointer;
+}
