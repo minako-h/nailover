@@ -5,3 +5,28 @@
   font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic'; 
   color: #383636;
 }
+
+.postimage {
+  height: auto;
+  width: auto;
+  text-align: center;
+  margin-top: 100px;
+  img {
+    height: 400px;
+    border-radius: 50px;
+    }
+}
+
+.postname {
+margin-left: 300px;
+}
+
+.posttitle {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.posttime {
+  margin-top: 50px;
+  margin-left: 300px;
+}
