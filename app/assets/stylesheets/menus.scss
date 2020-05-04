@@ -22,7 +22,7 @@
 .menu-choice1 {
   display: flex;
   justify-content: space-around;
-  margin-top: 70px;
+  margin: 70px 80px 0 80px;
   animation-name: fadein;
   animation-duration: 2s;
   // animation-iteration-count: infinite;
@@ -50,7 +50,7 @@
 .menu-choice2 {
   display: flex;
   justify-content: space-around;
-  margin-top: 50px;
+  margin: 70px 80px 0 80px;
   animation-name: fadein;
   animation-duration: 2s;
 }

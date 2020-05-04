@@ -1,6 +1,17 @@
 class CommentsController < ApplicationController
+
+  def index
+    @comments = Comment.all
+
+  end
+
+  def new
+    @comment = Comment.new
+  end
+
   def create
-    comment = Comment.create(comment_params)
+    Comment.create(comment_params)
+    # comment = Comment.create(comment_params)
     # redirect_to "/movies/#{comment.movie.id}"
     redirect_to movies_path
   end

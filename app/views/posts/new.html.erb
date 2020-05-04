@@ -4,6 +4,7 @@
     <%= form_with(model: @post, local: true) do |form| %>
       <%= form.text_field :name, placeholder: "Nickname", class: "input-n"%>
       <%= form.text_field :image, placeholder: "Image Url", class: "input-i" %>
+      <%# <%= form.file_filed :image %>
       <%= form.text_area :text, placeholder: "Text 例&#13;&#10;ドット柄にしてみました！".html_safe, class:"input-t" %>
       <%= form.submit "SEND", class: "input-b" %>
     <% end %>
