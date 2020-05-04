@@ -15,8 +15,19 @@
       &#x1f4f7; Posted image
     </div>
     <div class="photo-list">
+      <% @posts.each do |post| %>
+      <%=link_to post_path(post.id) do%>
+        <div class="photo-p">
+          <%= image_tag post.image%>
+          <div class="text">
+          <%= post.text%>
+          </div>
+          <div class="time">
+          <%= post.created_at.strftime("%Y-%m-%d") %>
+          </div>
+        </div>
+      <% end %>
+      <% end %>
     </div>
-
-
   </div>
 </div>
