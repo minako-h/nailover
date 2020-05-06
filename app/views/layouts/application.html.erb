@@ -43,11 +43,7 @@
             <%= link_to "MENU", menus_path, class: "menu-list__btn"  %>
           </li>  
           <li class="menu-list">
-            <% if user_signed_in? %>
               <%= link_to "CONTACT US", new_contact_path, class: "menu-list__btn"  %>
-            <% else%>
-              <%= link_to "CONTACT US", new_user_registration_path %>
-            <% end%>
           </li>
         </ul>
         <ul class="SNS">

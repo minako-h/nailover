@@ -1,6 +1,7 @@
 class ContactsController < ApplicationController
 
   def new
+    redirect_to new_user_registration_path unless user_signed_in?
     @contact = Contact.new
   end
   
