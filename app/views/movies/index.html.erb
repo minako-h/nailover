@@ -22,8 +22,7 @@
       <div class="comment-view">
         <%# <% @comments.each do |comment| %>
           <%# <%= comment.text %>
-        ※コメントが表示される予定です※
-        <%# <% end %> %>
+        <%# <% end %>
       </div>
       </div>
   </div>
@@ -32,16 +31,15 @@
     <div class="movie2">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/XIEF0rGoc4Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-    <div class="comment">
-      comment
-      <div class="comment-form"></div>
 
-      <div class="comment-btn">
-        GO
-      </div>
-      
+    <%= form_with(model: @comment, local:true) do |form| %>
+      <div class="comment">comment
+        <%= form.text_area :text, placeholder: "Text 例&#13;&#10;参考になりました！".html_safe , class: "input-comment"%>
+        <%= form.submit 'GO', class: "comment-btn" %>
+    <% end %>
+
       <div class="comment-view">
-        ※コメントが表示される予定です※
+
       </div>
     </div>
   </div>

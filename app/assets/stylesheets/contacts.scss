@@ -16,16 +16,16 @@
   font-size: 40px;
   margin-top: 100px;
   text-align: center;
-  font-weight: bold;
+  // font-weight: bold;
 }
 
 h3 {
   font-size: 20px;
   margin-top: 50px;
+  font-weight: lighter;
 }
 
 .input-name {
-  background-color: white;
   height: 30px;
   width: 100%;
   margin: 0 auto;
@@ -35,11 +35,10 @@ h3 {
 
 h4 {
   font-size: 20px;
-
+  font-weight: lighter;
 }
 
 .input-message {
-  background-color: white;
   height: 150px;
   width: 100%;
   margin: 0 auto;
@@ -59,6 +58,7 @@ h4 {
   line-height: 45px;
   margin: 20px auto;
   margin-left: 17%;
+  font-weight: lighter;
   cursor: pointer;
 }
 
