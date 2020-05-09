@@ -10,21 +10,21 @@
   </div>
 
   <div class="menu-choice1">
-    <%= link_to  movies_path, class: "select"  do %>
+    <%= link_to  movies_path(category: "base"), class: "select"  do %>
       <div class="select">
         <%= image_tag 'base1.jpg', class:"image1" %>
         <h1>BASE</h1>
       </div>
     <% end %>
     
-    <%= link_to  movies_path, class: "select"  do %>
+    <%= link_to  movies_path(category: "color"), class: "select"  do %>
       <div class="select">
         <%= image_tag 'color2.jpg', class:"image1" %>
         <h1>COLOR</h1>
       </div>
     <% end %>
 
-    <%= link_to  movies_path, class: "select"  do %>
+    <%= link_to  movies_path(category: "top"), class: "select"  do %>
       <div class="select">
         <%= image_tag 'top2.jpg', class:"image1" %>
         <h1>TOP</h1>
@@ -33,7 +33,7 @@
   </div>
 
   <div class="menu-choice2">
-    <%= link_to  movies_path, class: "select"  do %>
+    <%= link_to  movies_path(category: "art"), class: "select"  do %>
       <div class="select">
         <%= image_tag 'art1.jpg', class:"image1" %>
         <h1>ART</h1>
@@ -47,7 +47,7 @@
       </div>
     <% end %>
 
-    <%= link_to  movies_path, class: "select"  do %>
+    <%= link_to  movies_path(category: "polish"), class: "select"  do %>
       <div class="select">
         <%= image_tag 'etc.jpg', class:"image1" %>
         <h1>POLISH</h1>
