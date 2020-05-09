@@ -10,10 +10,13 @@
   </div>
 
   <div class="movie-space">
-    <div class="movie1">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/h-5mNdTobDA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-
+    <% @movies.each do |movie| %>
+      <div class="movie1">
+        <iframe width="560" height="315" src=<%= movie.src %> frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <% break %>
+    <% end %>
+    
     <%= form_with(model: @comment, local:true) do |form| %>
       <div class="comment">comment
         <%= form.text_area :text, placeholder: "Text 例&#13;&#10;参考になりました！".html_safe , class: "input-comment"%>
@@ -21,26 +24,9 @@
     <% end %>
       <div class="comment-view">
         <%# <% @comments.each do |comment| %>
-          <%# <%= comment.text %>
-        <%# <% end %>
+          <%# <%= comment.text %> 
+        <%# <% end %> 
       </div>
       </div>
-  </div>
-
-  <div class="movie-space">
-    <div class="movie2">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/XIEF0rGoc4Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-
-    <%= form_with(model: @comment, local:true) do |form| %>
-      <div class="comment">comment
-        <%= form.text_area :text, placeholder: "Text 例&#13;&#10;参考になりました！".html_safe , class: "input-comment"%>
-        <%= form.submit 'GO', class: "comment-btn" %>
-    <% end %>
-
-      <div class="comment-view">
-
-      </div>
-    </div>
   </div>
 </div>
