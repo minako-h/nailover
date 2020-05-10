@@ -9,24 +9,22 @@
     </div>
   </div>
 
-  <div class="movie-space">
     <% @movies.each do |movie| %>
-      <div class="movie1">
-        <iframe width="560" height="315" src=<%= movie.src %> frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      <% break %>
+    <div class="movie-space">
+        <div class="movie1">
+          <iframe width="560" height="315" src=<%= movie.src %> frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+          <div class="comment">comment
+            <%= form_with(url:movie_comments_path(movie.id), local: true) do |form| %>
+                <%= form.text_area :text, placeholder: "Text 例&#13;&#10;参考になりました！".html_safe , class: "input-comment"%>
+                <%= form.submit 'GO', class: "comment-btn" %>
+            <% end %>
+            <div class="comment-view">
+              <%# <% @comments.each do |comment| %>
+                <%# <%= comment.text %> 
+              <%# <% end %> 
+            </div>
+          </div>
+    </div>
     <% end %>
-    
-    <%= form_with(model: @comment, local:true) do |form| %>
-      <div class="comment">comment
-        <%= form.text_area :text, placeholder: "Text 例&#13;&#10;参考になりました！".html_safe , class: "input-comment"%>
-        <%= form.submit 'GO', class: "comment-btn" %>
-    <% end %>
-      <div class="comment-view">
-        <%# <% @comments.each do |comment| %>
-          <%# <%= comment.text %> 
-        <%# <% end %> 
-      </div>
-      </div>
-  </div>
 </div>
