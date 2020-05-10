@@ -11,43 +11,43 @@
 Movie.create!(
   [
     {
-      category: 'base'
+      category: 'base',
       src: 'https://www.youtube.com/embed/h-5mNdTobDA'
     },
     {
-      category: 'base'
+      category: 'base',
       src: 'https://www.youtube.com/embed/XIEF0rGoc4Y'
     },
     {
-      category: 'color'
+      category: 'color',
       src: 'https://www.youtube.com/embed/mR8dLTSjDFY'
     },
     {
-      category: 'color'
+      category: 'color',
       src: 'https://www.youtube.com/embed/xQZ_79fldow'
     },
     {
-      category: 'top'
+      category: 'top',
       src: 'https://www.youtube.com/embed/CdF_6meHYRQ'
     },
     {
-      category: 'top'
+      category: 'top',
       src: 'https://www.youtube.com/embed/B8_bJBrGGEU'
     },
     {
-      category: 'art'
+      category: 'art',
       src: 'https://www.youtube.com/embed/HEoilr96HOA'
     },
     {
-      category: 'art'
+      category: 'art',
       src: 'https://www.youtube.com/embed/_o6C72_jsCg'
     }
     {
-      category: 'polish'
+      category: 'polish',
       src: 'https://www.youtube.com/embed/P-YZTFYi5zQ'
     },
     {
-      category: 'polish'
+      category: 'polish',
       src: 'https://www.youtube.com/embed/cym2ejZmkYo'
     }
   ]
