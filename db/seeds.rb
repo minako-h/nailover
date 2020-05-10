@@ -41,7 +41,7 @@ Movie.create!(
     {
       category: 'art',
       src: 'https://www.youtube.com/embed/_o6C72_jsCg'
-    }
+    },
     {
       category: 'polish',
       src: 'https://www.youtube.com/embed/P-YZTFYi5zQ'
