@@ -9,6 +9,13 @@
     </div>
   </div>
 
+  <div class="return">
+  <%= link_to  menus_path do %>
+  <i class="fa fa-arrow-left"></i>
+  <span>MENUへ戻る</span>
+  <% end %>
+  </div>
+
     <% @movies.each do |movie| %>
     <div class="movie-space">
         <div class="movie1">
